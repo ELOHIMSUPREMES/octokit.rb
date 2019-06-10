@@ -28,6 +28,10 @@ group :test do
   gem 'webmock', '~> 3.4', '>= 3.4.2'
 end
 
+group :test, :development do
+  gem 'activesupport'
+end
+
 platforms :rbx do
   gem 'psych'
   gem 'rubysl', '~> 2.0'
